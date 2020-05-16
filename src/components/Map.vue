@@ -60,12 +60,15 @@ export default {
 
 <style scoped>
 #wrapper {
-    width: 90%;
-    margin: 0 auto;
+    flex-grow: 1;
+    height: 80vh;
+    margin: 1vh auto;
     border: 7px ridge forestgreen;
     padding: 2%;
     background-color: limegreen;
-    box-shadow: 10px 10px 5px grey;
+    /* box-shadow: 10px 10px 5px grey; */
+    max-width: 49vw;
+    min-width: 300px;
 }
 
 #map {

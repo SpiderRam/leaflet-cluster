@@ -4,7 +4,7 @@
         <div class="row">
             <app-title></app-title>
         </div>
-        <div class="row">
+        <div class="row wrapped">
             <app-map></app-map>
             <app-sidebar></app-sidebar>
         </div>
@@ -36,5 +36,11 @@ export default {
 
 .row {
     margin-bottom: 5%;
+}
+
+.wrapped {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 </style>

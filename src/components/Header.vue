@@ -1,5 +1,5 @@
 <template>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="header">
         <div class="innerContainer">
             <div class="title">Leaflet.js Map</div>
             <p class="subtitle">
@@ -21,12 +21,14 @@ export default {
 </script>
 
 <style scoped>
-.jumbotron {
+.header {
     font-family: 'Gaegu', cursive;
     margin-bottom: 5%;
     background-image: url('../images/trianglify-green.png');
     text-shadow: 1px 1px 2px black, 0 0 25px lemonchiffon, 0 0 5px lawngreen;
     background-size: cover;
+    width: 100vw;
+    height: 230px;
 }
 
 .title {
