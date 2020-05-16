@@ -1,6 +1,7 @@
 <template>
     <div class="hello">
         <h3>Test Page</h3>
+        <h4>With deploy script and public path added</h4>
     </div>
 </template>
 
