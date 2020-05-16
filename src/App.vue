@@ -1,27 +1,40 @@
 <template>
     <div id="app">
-        <HelloWorld />
+        <app-header></app-header>
+        <div class="row">
+            <app-title></app-title>
+        </div>
+        <div class="row">
+            <app-map></app-map>
+            <app-sidebar></app-sidebar>
+        </div>
     </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import MapVue from './components/Map.vue';
+import HeaderVue from './components/Header.vue';
+import SidebarVue from './components/Sidebar.vue';
+import TitleVue from './components/Title.vue';
 
 export default {
     name: 'app',
+    data() {
+        return {};
+    },
     components: {
-        HelloWorld,
+        appMap: MapVue,
+        appHeader: HeaderVue,
+        appSidebar: SidebarVue,
+        appTitle: TitleVue,
     },
 };
 </script>
 
 <style>
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+@import url('https://fonts.googleapis.com/css?family=Gaegu:300');
+
+.row {
+    margin-bottom: 5%;
 }
 </style>
