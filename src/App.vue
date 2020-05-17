@@ -34,6 +34,12 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Gaegu:300');
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .row {
     margin-bottom: 5%;
 }
